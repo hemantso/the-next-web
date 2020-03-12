@@ -48,7 +48,7 @@ body {
   align-items: center;
   background-color: rgb(243, 239, 233);
   color: rgb(119, 118, 116);
-  height: 45px;
+  height: 3em;
 }
 .unscrollable-nav ul {
   display: flex;
@@ -63,61 +63,44 @@ body {
   color: black;
   cursor: pointer;
 }
-.heroes img{
-  display: block;
-  width: 100%;
-  height: 100%;
-}
 
 .heroes {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 200px 200px;
-  grid-area: "hero-1 hero-2"
-             "hero-1 hero-3";
-  
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  height: 20em;
+  justify-content: space-evenly;
+  margin: 0 auto;
 }
 
+.hero-1 {
+  width: 65%;
+}
 .hero-1 img {
-  grid-area: hero-1;
-}
-/* .right-img  {
-  display: grid;
-  gap: .5em;
-} */
-.hero-2 img{
-  grid-area: hero-2;
-}
-
-.hero-3 img{
-  grid-area: hero-3;
-  
-}
-/* .heroes {
-  display: flex;
+  height: 100%;
   width: 100%;
-  /* height: 400px; */
-  /* justify-content: space-evenly;
-} */
-
-/* .first-hero {
-  width: 64%;
 }
-
-.first-hero img{
-  width: 100%;
-  /* height: 400px; */
-/* }
-
-.right-img {
-  width: 35%;
+.wrapper {
   display: flex;
+  width: 33%;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
 }
-.secondary-hero {
-  height: 50%;
-} */
-/* .secondary-hero img{
+
+.hero-2 {
+  height: 49%;
   width: 100%;
-}  */
+}
+.hero-2 img {
+  height: 100%;
+  width: 100%;
+}
+.hero-3 {
+  height: 49%;
+  width: 100%;
+}
+.hero-3 img {
+  height: 100%;
+  width: 100%;
+}
