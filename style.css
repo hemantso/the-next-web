@@ -146,16 +146,12 @@ a {
   width: 100%;
 }
 
-
-
 .news-container h2 {
   color: red;
   margin: 2rem auto;
   font-weight: 700;
   font-size: 1.8em;
 }
-
-
 
 .news img {
   width: 100%;
@@ -189,17 +185,16 @@ a {
 .news p {
   font-size: 1rem;
   font-weight: 700;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .news p:hover {
   color: red;
   cursor: pointer;
   text-decoration: underline;
-
 }
 
-.news ul{
+.news ul {
   display: flex;
   font-size: 0.8rem;
   justify-content: space-between;
@@ -211,14 +206,13 @@ a {
   cursor: pointer;
 }
 
-
 .funding-content {
   width: 90%;
   height: auto;
   margin: 0.5rem auto;
 }
 
-.funding-nav  {
+.funding-nav {
   display: flex;
   font-size: 0.8rem;
   justify-content: space-between;
@@ -229,22 +223,18 @@ a {
   margin-top: 2.5em;
   color: #f42;
   justify-content: space-around;
-
 }
 .funding-nav-2 ul li {
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 .funding-rounds {
   display: grid;
   grid-template-columns: repeat(auto-fit);
   gap: 2em;
-  grid-template-areas:
-    "fund-1 fund-2 fund-3 fund-4";
+  grid-template-areas: "fund-1 fund-2 fund-3 fund-4";
   width: 100%;
   position: relative;
 }
-
-
 
 .funding-content h2 {
   color: #f42;
@@ -265,13 +255,12 @@ a {
   align-items: center;
 }
 .funding p {
-  background: rgba(255,68,34,.08);
+  background: rgba(255, 68, 34, 0.08);
   display: flex;
   height: 4rem;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
-
 
 .funding img {
   width: 20%;
@@ -293,15 +282,12 @@ a {
   grid-area: fund-4;
 }
 
-
-.funding ul{
+.funding ul {
   display: flex;
   font-size: 0.8rem;
   justify-content: space-between;
   color: gray;
 }
-
-
 
 .funding ul li:hover:first-child {
   color: black;
@@ -313,7 +299,7 @@ a {
   font-size: 0.8rem;
 }
 .tag {
-  margin: .5em auto;
+  margin: 0.5em auto;
   color: gray;
 }
 .tag:hover {
@@ -321,7 +307,7 @@ a {
   cursor: pointer;
 }
 .sponsor {
-  margin: .5em auto;
+  margin: 0.5em auto;
   color: gray;
 }
 .sponsor:hover {
@@ -329,6 +315,41 @@ a {
   cursor: pointer;
 }
 .summary {
-  margin: .5em auto;
+  margin: 0.5em auto;
   color: gray;
 }
+
+.other-topics {
+  margin: 5em 2rem;
+  border: rgb(205, 90, 195) 2px solid;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 1%;
+}
+
+.card-img{
+  height: 100%;
+  background-image: url(./image/coronavirus-china-app-796x448.jpg);
+}
+
+.card img {
+  width: 100%;
+}
+.card-latest h4 {
+  border: rgb(194, 205, 90) 2px solid;
+}
+.card-latest h3 {
+  border: rgb(205, 151, 90) 2px solid;
+}
+
+.card-latest {
+  display: flex;
+  border: rgb(90, 205, 119) 2px solid;
+}
+.card-latest-img {
+  float: right;
+  width: 50%;
+}
+ .card-latest ul li {
+   list-style-type: disc;
+ }
