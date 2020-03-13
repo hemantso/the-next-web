@@ -93,7 +93,7 @@ a {
   display: flex;
   max-width: 1500px;
   width: 100%;
-  height: 20em;
+  height: 23em;
   justify-content: space-evenly;
   margin: 0.2em auto;
 }
@@ -689,5 +689,135 @@ content: "\2022";
 .topic8 .latest {
   display: flex;
   flex-direction: row-reverse;
+  font-size: 0.8rem;
+}
+
+
+
+
+
+.latest-deals {
+  width: 90%;
+  height: auto;
+  margin: 0.5rem auto;
+}
+
+.deals-header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit);
+  gap: 2em;
+  grid-template-areas:
+    "deals-1 deals-2 deals-3 deals-4"
+    "deals-5 deals-6 deals-7 deals-8";
+  width: 100%;
+}
+
+.latest-deals h2 {
+  color: red;
+  margin: 2rem auto;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.deals img {
+  width: 100%;
+  height: 10em;
+}
+.deals-1 {
+  grid-area: deals-1;
+}
+.deals-2 {
+  grid-area: deals-2;
+}
+.deals-3 {
+  grid-area: deals-3;
+}
+.deals-4 {
+  grid-area: deals-4;
+}
+.deals-5 {
+  grid-area: deals-5;
+}
+.deals-6 {
+  grid-area: deals-6;
+}
+.deals-7 {
+  grid-area: deals-7;
+}
+.deals-8 {
+  grid-area: deals-8;
+}
+
+.deals p {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+
+.deals p:hover {
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.deals ul {
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  color: gray;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  height: 240px;
+  margin-top: 6rem;
+}
+.share-icons{
+  display: flex;
+  justify-content:  center;
+  align-items: flex-end;
+  height: 80px;
+  background-color: rgb(32, 32, 32);
+}
+
+
+.footer-links{
+  display: flex;
+  justify-content:  center;
+  align-items: flex-start;
+  height: 80px;
+  background-color: rgb(32, 32, 32);
+
+}
+.footer-links ul {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.footer-links ul li {
+  display: flex;
+  margin-right: 0.7rem;
+  font-size: 0.8rem;
+  color: darkgray;
+}
+.footer-links ul li:hover{
+  color: white;
+  cursor: pointer;
+}
+.icon-circle {
+  margin-right: 1.5em;
+}
+.icon-circle:hover{
+  cursor: pointer;
+}
+
+.copyright {
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  height: 80px;
+  background-color:black;
+  color: white;
   font-size: 0.8rem;
 }
