@@ -210,3 +210,125 @@ a {
   color: black;
   cursor: pointer;
 }
+
+
+.funding-content {
+  width: 90%;
+  height: auto;
+  margin: 0.5rem auto;
+}
+
+.funding-nav  {
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: space-between;
+}
+.funding-nav-2 ul {
+  display: flex;
+  font-size: 1rem;
+  margin-top: 2.5em;
+  color: #f42;
+  justify-content: space-around;
+
+}
+.funding-nav-2 ul li {
+  margin-right: .5em;
+}
+.funding-rounds {
+  display: grid;
+  grid-template-columns: repeat(auto-fit);
+  gap: 2em;
+  grid-template-areas:
+    "fund-1 fund-2 fund-3 fund-4";
+  width: 100%;
+  position: relative;
+}
+
+
+
+.funding-content h2 {
+  color: #f42;
+  margin: 2rem auto;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.funding {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.funding h5 {
+  display: flex;
+  background-color: #f42;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.funding p {
+  background: rgba(255,68,34,.08);
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+.funding img {
+  width: 20%;
+  position: absolute;
+  z-index: 1;
+  top: 23px;
+  left: 19px;
+}
+.fund-1 {
+  grid-area: fund-1;
+}
+.fund-2 {
+  grid-area: fund-2;
+}
+.fund-3 {
+  grid-area: fund-3;
+}
+.fund-4 {
+  grid-area: fund-4;
+}
+
+
+.funding ul{
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  color: gray;
+}
+
+
+
+.funding ul li:hover:first-child {
+  color: black;
+  cursor: pointer;
+}
+
+.funding-info {
+  background-color: #ffc0cb29;
+  font-size: 0.8rem;
+}
+.tag {
+  margin: .5em auto;
+  color: gray;
+}
+.tag:hover {
+  color: black;
+  cursor: pointer;
+}
+.sponsor {
+  margin: .5em auto;
+  color: gray;
+}
+.sponsor:hover {
+  color: black;
+  cursor: pointer;
+}
+.summary {
+  margin: .5em auto;
+  color: gray;
+}
