@@ -319,37 +319,375 @@ a {
   color: gray;
 }
 
+
 .other-topics {
-  margin: 5em 2rem;
-  border: rgb(205, 90, 195) 2px solid;
-  display: grid;
-  grid-template-columns: repeat(3, 30%);
-  gap: 1%;
+	display: grid;
+	grid-gap: 1.5em;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 600px);
+	margin: 67px auto 0 auto;
+	width: 90%;
 }
-
-.card-img{
-  height: 100%;
-  background-image: url(./image/coronavirus-china-app-796x448.jpg);
+.other-topics h2 {
+  color: #f42;
+  margin: 2rem 0;
 }
-
-.card img {
+.latest img{
   width: 100%;
 }
-.card-latest h4 {
-  border: rgb(194, 205, 90) 2px solid;
-}
-.card-latest h3 {
-  border: rgb(205, 151, 90) 2px solid;
+
+.topic1 .most-popular {
+  margin: 0.2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  color: white;
+  height: 200px;
+  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
 }
 
-.card-latest {
+.topic1 .most-popular p{
+  margin: 0.5em 0;
+}
+.topic1 .most-popular ul {
+  font-size: 0.8rem;
   display: flex;
-  border: rgb(90, 205, 119) 2px solid;
+  justify-content: space-between;
 }
-.card-latest-img {
-  float: right;
-  width: 50%;
+.topic1 .latest {
+  height: 5em;
 }
- .card-latest ul li {
-   list-style-type: disc;
- }
+.topic1 .latest img {
+  width: 20%;
+}
+.topic1 .latest p {
+  margin: 0.5em 0;
+  color: #f42;
+  margin: 0.1em 0.5em;
+}
+.topic1 .latest div {
+  background-color: #ff442214;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.topic1 .latest {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0.8rem;
+}
+
+.other-articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 0.8rem;
+}
+.other-articles li {
+  border-bottom: 1px solid grey;
+  height: 35px;
+  margin: 0.5em 0;
+}
+.other-articles li::before {
+content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+.topic2 .most-popular {
+  margin: 0.2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  color: white;
+  height: 200px;
+  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+}
+
+.topic2 .most-popular p{
+  margin: 0.5em 0;
+}
+.topic2 .most-popular ul {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.topic2 .latest {
+  height: 5em;
+}
+.topic2 .latest img {
+  width: 20%;
+}
+.topic2 .latest p {
+  margin: 0.5em 0;
+  color: #f42;
+  margin: 0.1em 0.5em;
+}
+.topic2 .latest div {
+  background-color: #ff442214;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.topic2 .latest {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0.8rem;
+}
+
+.topic3 .most-popular {
+  margin: 0.2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  color: white;
+  height: 200px;
+  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+}
+
+.topic3 .most-popular p{
+  margin: 0.5em 0;
+}
+.topic3 .most-popular ul {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.topic3 .latest {
+  height: 5em;
+}
+.topic3 .latest img {
+  width: 20%;
+}
+.topic3 .latest p {
+  margin: 0.5em 0;
+  color: #f42;
+  margin: 0.1em 0.5em;
+}
+.topic3 .latest div {
+  background-color: #ff442214;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.topic3 .latest {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0.8rem;
+  width: 101%;
+}
+
+.topic4 .most-popular {
+  margin: 0.2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  color: white;
+  height: 200px;
+  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+}
+
+.topic4 .most-popular p{
+  margin: 0.5em 0;
+}
+.topic4 .most-popular ul {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.topic4 .latest {
+  height: 5em;
+}
+.topic4 .latest img {
+  width: 20%;
+}
+.topic4 .latest p {
+  margin: 0.5em 0;
+  color: #f42;
+  margin: 0.1em 0.5em;
+}
+.topic4 .latest div {
+  background-color: #ff442214;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.topic4 .latest {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0.8rem;
+}
+
+.topic5 .most-popular {
+  margin: 0.2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  color: white;
+  height: 200px;
+  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+}
+
+.topic5 .most-popular p{
+  margin: 0.5em 0;
+}
+.topic5 .most-popular ul {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.topic5 .latest {
+  height: 5em;
+}
+.topic5 .latest img {
+  width: 20%;
+}
+.topic5 .latest p {
+  margin: 0.5em 0;
+  color: #f42;
+  margin: 0.1em 0.5em;
+}
+.topic5 .latest div {
+  background-color: #ff442214;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.topic5 .latest {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0.8rem;
+}
+
+.topic6 .most-popular {
+  margin: 0.2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  color: white;
+  height: 200px;
+  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+}
+
+.topic6 .most-popular p{
+  margin: 0.5em 0;
+}
+.topic6 .most-popular ul {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.topic6 .latest {
+  height: 5em;
+}
+.topic6 .latest img {
+  width: 20%;
+}
+.topic6 .latest p {
+  margin: 0.5em 0;
+  color: #f42;
+  margin: 0.1em 0.5em;
+}
+.topic6 .latest div {
+  background-color: #ff442214;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.topic6 .latest {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0.8rem;
+}
+
+.topic7 .most-popular {
+  margin: 0.2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  color: white;
+  height: 200px;
+  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+}
+
+.topic7 .most-popular p{
+  margin: 0.5em 0;
+}
+.topic7 .most-popular ul {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.topic7 .latest {
+  height: 5em;
+}
+.topic7 .latest img {
+  width: 20%;
+}
+.topic7 .latest p {
+  margin: 0.5em 0;
+  color: #f42;
+  margin: 0.1em 0.5em;
+}
+.topic7 .latest div {
+  background-color: #ff442214;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.topic7 .latest {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0.8rem;
+}
+
+.topic8 .most-popular {
+  margin: 0.2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  color: white;
+  height: 200px;
+  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+}
+
+.topic8 .most-popular p{
+  margin: 0.5em 0;
+}
+.topic8 .most-popular ul {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.topic8 .latest {
+  height: 5em;
+}
+.topic8 .latest img {
+  width: 20%;
+}
+.topic8 .latest p {
+  margin: 0.5em 0;
+  color: #f42;
+  margin: 0.1em 0.5em;
+}
+.topic8 .latest div {
+  background-color: #ff442214;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.topic8 .latest {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0.8rem;
+}
