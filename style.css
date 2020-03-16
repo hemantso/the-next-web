@@ -103,6 +103,9 @@ nav .unscrollable-nav {
   font-size: 0.8rem;
   width: 100%;
 }
+nav .unscrollable-nav .search-container i:last-child {
+  display: none;
+}
 
 .hamburger-menu {
   display: flex;
@@ -1016,7 +1019,191 @@ footer {
     color: black;
     margin-left: 1em;
   }
+  
+  .heroes {
+    display: flex;
+    max-width: 1500px;
+    width: 97%;
+    margin: 0 auto;
+    height: 31em;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .hero-1 {
+    width: 100%;
+    height: 10em;
+    background: 
+      url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design19-796x417.png'),
+      no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 0.2rem 0;
+  }
+  
+  .logo-date {
+    display: none;
+  }
+  
+  .secondary-hero span {
+    margin-left: 1rem;
+  }
+  
+  .hero-1 .author-time-shares span {
+    /* margin: 1rem; */
+    font-size: 0.7rem;
+  }
+  
+  .hero-1 .author-time-shares {
+    margin-bottom: 1.1rem;
+  }
+  .hero-1 .topic {
+    display: none;
+  }
+  
+  .hero-1 .title {
+    font-size: 1em;
+    font-weight: 600;
+    width: 80%;
+    margin: 0 0 0 1em;
+    
+  }
+  
+  .wrapper {
+    display: flex;
+    width: 100%;
+    height: 21em;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    
+  }
+  
+  .secondary-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 50%;
+    background: transparent url('https://source.unsplash.com/weekly?t')
+      no-repeat;
+      
+  }
+  
+  .hero-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 49%;
+    background: transparent url('https://source.unsplash.com/weekly?techi')
+      no-repeat;
+  }
+  
 
+  
+  .secondary-hero .author-time-shares {
+    display: flex;
+    font-size: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .secondary-hero .topic {
+    margin-left: 1rem;
+   
+
+  }
+  
+  .secondary-hero .title {
+    font-size: 1em;
+    font-weight: 600;
+    width: 70%;
+    margin: 0 0 0 1em;
+    
+  }
+  
+  .news-container {
+    width: 97%;
+    height: auto;
+    margin: 0.5rem auto;
+  }
+  
+  .latest-news {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: repeat(auto-fit);
+    gap: 2em;
+    grid-template-areas:
+      'news-1 '
+      'news-2' 
+      'news-3' 
+      'news-4'
+      'news-5' 
+      'news-6' 
+      'news-7' 
+      'news-8';
+    width: 100%;
+  }
+  
+  
+  
+  .news img {
+    width: 12%;
+    height: 5em;
+    
+  }
+  
+  .news-1 {
+    grid-area: news-1;
+    
+  }
+  
+  .news-2 {
+    grid-area: news-2;
+  }
+  
+  .news-3 {
+    grid-area: news-3;
+  }
+  
+  .news-4 {
+    grid-area: news-4;
+  }
+  
+  .news-5 {
+    grid-area: news-5;
+  }
+  
+  .news-6 {
+    grid-area: news-6;
+  }
+  
+  .news-7 {
+    grid-area: news-7;
+  }
+  
+  .news-8 {
+    grid-area: news-8;
+  }
+  
+  .news {
+    display: flex;
+  }
+  .news div {
+    margin: -3px 0 0 10px;
+  }
+  .news p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    
+  }
+  .news ul {
+    display: flex;
+    font-size: 0.8rem;
+    color: gray;
+    justify-content: flex-start;
+  }
+  
   
 
 }
