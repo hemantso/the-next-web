@@ -17,6 +17,13 @@ a {
   text-decoration: none;
 }
 
+/* #sticky-nav {
+  width: 100%;
+  position: fixed;
+  background-color: green;
+  top: 0;
+} */
+
 .scrollable-nav {
   display: flex;
   justify-content: space-between;
@@ -32,15 +39,40 @@ a {
   float: right;
 }
 
-.top-nav-bar ul {
+.unscrollable-nav ul {
   display: flex;
   justify-content: space-between;
+}
+
+.other-articles li {
+  border-bottom: 1px solid grey;
+  height: 35px;
+  margin: 0.5em 0;
 }
 
 .top-nav-bar ul li {
   list-style-type: none;
   margin: 0.5em 1em;
   font-size: 0.8rem;
+}
+
+.funding-nav-2 ul li {
+  margin-right: 0.5em;
+}
+
+.unscrollable-nav ul li {
+  list-style-type: none;
+  margin: 0.5em 1em;
+}
+
+.unscrollable-nav li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.top-nav-bar ul {
+  display: flex;
+  justify-content: space-between;
 }
 
 .top-nav-bar ul li:hover {
@@ -57,8 +89,13 @@ a {
   height: 36px;
   padding: 0 10px;
 }
+/* .sticky {
+  background-color: green;
+  position: sticky;
+  top: 0;
+} */
 
-.unscrollable-nav {
+nav .unscrollable-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,20 +103,14 @@ a {
   color: rgb(119, 118, 116);
   height: 3em;
   font-size: 0.8rem;
-}
-.unscrollable-nav ul {
-  display: flex;
-  justify-content: space-between;
-}
-.unscrollable-nav ul li {
-  list-style-type: none;
-  margin: 0.5em 1em;
+  position: sticky;
+  position: -webkit-sticky;
+  top: -1px;
+  width: 100%;
+  /* margin-top: 2em; */
 }
 
-.unscrollable-nav li:hover {
-  color: black;
-  cursor: pointer;
-}
+
 
 .hamburger-menu {
   display: flex;
@@ -89,7 +120,9 @@ a {
   justify-content: center;
   font-size: 0.8rem;
   height: 2rem;
+  /* margin-top: 3em; */
 }
+
 .hamburger-menu a {
   color: black;
   margin-left: 1em;
@@ -107,25 +140,48 @@ a {
 
 .hero-1 {
   width: 65%;
- background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design19-796x417.png") no-repeat;
- background-size: cover;
- display: flex;
- flex-direction: column;
- justify-content: space-evenly;
+  background:
+    linear-gradient(
+      to right bottom,
+      rgba(255, 67, 10, 0.85) 20%,
+      rgba(255, 67, 10, 0.5) 60%,
+      transparent
+    ),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design19-796x417.png"),
+    no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+
 .logo-date {
   display: flex;
   justify-content: space-between;
+  margin: 1rem;
 }
+
 .hero-1 img {
   width: 50%;
 }
 
+.secondary-hero span {
+  margin-left: 1rem;
+}
 
-.hero-1 .title{
+.hero-1 .author-time-shares span {
+  margin: 1rem;
+  font-size: 0.7rem;
+}
+
+.hero-1 .topic {
+  margin: 1rem;
+}
+
+.hero-1 .title {
   font-size: 2em;
   width: 70%;
-  margin-bottom: 5px;
+  margin: 1rem;
 }
 
 .wrapper {
@@ -137,59 +193,45 @@ a {
   color: white;
 }
 
-.hero-2 {
+.secondary-hero {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 49%;
-  width: 100%;
-  background-color: red;
-  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg") no-repeat;
+  background:
+    transparent url("https://source.unsplash.com/weekly?web")
+    no-repeat;
 }
 
-.hero-2 .author-time-shares {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 0.8rem;
-
-}
-
-.hero-2 .title {
-  font-size: 1.3em;
-  width: 70%;
-  margin-bottom: 5px;
-}
-
-.hero-3 .title {
-  font-size: 1.3em;
-  width: 70%;
-  margin-bottom: 5px;
-}
-
-.hero-3 .author-time-shares {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 0.8rem;
-
-}
-
-.hero-2 img {
-  height: 100%;
-  width: 100%;
-}
 .hero-3 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 49%;
-  width: 100%;
-  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg") no-repeat;
+  background:
+    transparent url("https://source.unsplash.com/weekly?tech")
+    no-repeat;
 }
-.hero-3 img {
+
+.secondary-hero img {
   height: 100%;
   width: 100%;
+}
+
+.secondary-hero .author-time-shares {
+  display: flex;
+  font-size: 0.8rem;
+}
+
+.secondary-hero .topic {
+  margin-left: 1rem;
+}
+
+.secondary-hero .title {
+  font-size: 1.3em;
+  width: 70%;
+  margin-left: 1rem;
+  font-weight: 700;
 }
 
 .news-container {
@@ -219,27 +261,35 @@ a {
   width: 100%;
   height: 10em;
 }
+
 .news-1 {
   grid-area: news-1;
 }
+
 .news-2 {
   grid-area: news-2;
 }
+
 .news-3 {
   grid-area: news-3;
 }
+
 .news-4 {
   grid-area: news-4;
 }
+
 .news-5 {
   grid-area: news-5;
 }
+
 .news-6 {
   grid-area: news-6;
 }
+
 .news-7 {
   grid-area: news-7;
 }
+
 .news-8 {
   grid-area: news-8;
 }
@@ -248,6 +298,14 @@ a {
   font-size: 1rem;
   font-weight: 700;
   margin: 0.5em 0;
+}
+
+.funding p {
+  background: rgba(255, 68, 34, 0.08);
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .news p:hover {
@@ -279,6 +337,7 @@ a {
   font-size: 0.8rem;
   justify-content: space-between;
 }
+
 .funding-nav-2 ul {
   display: flex;
   font-size: 1rem;
@@ -286,9 +345,8 @@ a {
   color: #f42;
   justify-content: space-around;
 }
-.funding-nav-2 ul li {
-  margin-right: 0.5em;
-}
+
+
 .funding-rounds {
   display: grid;
   grid-template-columns: repeat(auto-fit);
@@ -304,11 +362,13 @@ a {
   font-weight: 700;
   font-size: 1.8em;
 }
+
 .funding {
   display: flex;
   flex-direction: column;
   position: relative;
 }
+
 .funding h5 {
   display: flex;
   background-color: #f42;
@@ -316,30 +376,28 @@ a {
   justify-content: center;
   align-items: center;
 }
-.funding p {
-  background: rgba(255, 68, 34, 0.08);
-  display: flex;
-  height: 4rem;
-  justify-content: center;
-  align-items: center;
-}
+
+
 
 .funding img {
   width: 20%;
   position: absolute;
-  z-index: 1;
-  top: 23px;
-  left: 19px;
+  top: 1.7rem;
+  left: 0.5rem;
 }
+
 .fund-1 {
   grid-area: fund-1;
 }
+
 .fund-2 {
   grid-area: fund-2;
 }
+
 .fund-3 {
   grid-area: fund-3;
 }
+
 .fund-4 {
   grid-area: fund-4;
 }
@@ -360,41 +418,47 @@ a {
   background-color: #ffc0cb29;
   font-size: 0.8rem;
 }
+
 .tag {
   margin: 0.5em auto;
   color: gray;
 }
+
 .tag:hover {
   color: black;
   cursor: pointer;
 }
+
 .sponsor {
   margin: 0.5em auto;
   color: gray;
 }
+
 .sponsor:hover {
   color: black;
   cursor: pointer;
 }
+
 .summary {
   margin: 0.5em auto;
   color: gray;
 }
 
-
 .other-topics {
-	display: grid;
-	grid-gap: 1.5em;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 600px);
-	margin: 67px auto 0 auto;
-	width: 90%;
+  display: grid;
+  grid-gap: 1.5em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 600px);
+  margin: 67px auto 0 auto;
+  width: 90%;
 }
+
 .other-topics h2 {
   color: #f42;
   margin: 2rem 0;
 }
-.latest img{
+
+.latest img {
   width: 100%;
 }
 
@@ -406,38 +470,45 @@ a {
   position: relative;
   color: white;
   height: 200px;
-  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+  background:
+    transparent
+    url("https://source.unsplash.com/1600x925/?web")
+    no-repeat;
+    background-size: cover;
+
 }
 
-.topic1 .most-popular p{
+.topic1 .most-popular p {
   margin: 0.5em 0;
 }
+
 .topic1 .most-popular ul {
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
 }
-.topic1 .latest {
-  height: 5em;
-}
-.topic1 .latest img {
-  width: 20%;
-}
-.topic1 .latest p {
-  margin: 0.5em 0;
-  color: #f42;
-  margin: 0.1em 0.5em;
-}
-.topic1 .latest div {
-  background-color: #ff442214;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
+
 .topic1 .latest {
   display: flex;
   flex-direction: row-reverse;
   font-size: 0.8rem;
+  height: 5em;
+}
+
+.topic1 .latest img {
+  width: 20%;
+}
+
+.topic1 .latest p {
+  color: #f42;
+  margin: 0.1em 0.5em;
+}
+
+.topic1 .latest div  {
+  background-color: #ff442214;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .other-articles {
@@ -446,19 +517,16 @@ a {
   justify-content: space-around;
   font-size: 0.8rem;
 }
-.other-articles li {
-  border-bottom: 1px solid grey;
-  height: 35px;
-  margin: 0.5em 0;
-}
+
 .other-articles li::before {
-content: "\2022";
+  content: "\2022";
   color: red;
   font-weight: bold;
-  display: inline-block; 
+  display: inline-block;
   width: 1em;
   margin-left: -1em;
 }
+
 .topic2 .most-popular {
   margin: 0.2em 0;
   display: flex;
@@ -467,38 +535,45 @@ content: "\2022";
   position: relative;
   color: white;
   height: 200px;
-  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+  background:
+    transparent
+    url("https://source.unsplash.com/1650x900/?web")
+    no-repeat;
+    background-size: cover;
+
 }
 
-.topic2 .most-popular p{
+.topic2 .most-popular p {
   margin: 0.5em 0;
 }
+
 .topic2 .most-popular ul {
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
 }
-.topic2 .latest {
-  height: 5em;
-}
+
 .topic2 .latest img {
   width: 20%;
 }
+
 .topic2 .latest p {
-  margin: 0.5em 0;
   color: #f42;
   margin: 0.1em 0.5em;
 }
+
 .topic2 .latest div {
   background-color: #ff442214;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
 .topic2 .latest {
   display: flex;
   flex-direction: row-reverse;
   font-size: 0.8rem;
+  height: 5em;
 }
 
 .topic3 .most-popular {
@@ -509,39 +584,47 @@ content: "\2022";
   position: relative;
   color: white;
   height: 200px;
-  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+  background:
+    transparent
+    url("https://source.unsplash.com/1600x700/?web")
+    no-repeat;
+    background-size: cover;
+
 }
 
-.topic3 .most-popular p{
+.topic3 .most-popular p {
   margin: 0.5em 0;
 }
+
 .topic3 .most-popular ul {
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
 }
-.topic3 .latest {
-  height: 5em;
-}
+
 .topic3 .latest img {
   width: 20%;
 }
+
 .topic3 .latest p {
   margin: 0.5em 0;
   color: #f42;
   margin: 0.1em 0.5em;
 }
+
 .topic3 .latest div {
   background-color: #ff442214;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
 .topic3 .latest {
   display: flex;
   flex-direction: row-reverse;
   font-size: 0.8rem;
-  width: 101%;
+  width: 100%;
+  height: 5em;
 }
 
 .topic4 .most-popular {
@@ -552,38 +635,46 @@ content: "\2022";
   position: relative;
   color: white;
   height: 200px;
-  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+  background:
+    transparent
+    url("https://source.unsplash.com/1600x920/?web")
+    no-repeat;
+    background-size: cover;
+
 }
 
-.topic4 .most-popular p{
+.topic4 .most-popular p {
   margin: 0.5em 0;
 }
+
 .topic4 .most-popular ul {
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
 }
-.topic4 .latest {
-  height: 5em;
-}
+
 .topic4 .latest img {
   width: 20%;
 }
+
 .topic4 .latest p {
   margin: 0.5em 0;
   color: #f42;
   margin: 0.1em 0.5em;
 }
+
 .topic4 .latest div {
   background-color: #ff442214;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
 .topic4 .latest {
   display: flex;
   flex-direction: row-reverse;
   font-size: 0.8rem;
+  height: 5em;
 }
 
 .topic5 .most-popular {
@@ -594,38 +685,46 @@ content: "\2022";
   position: relative;
   color: white;
   height: 200px;
-  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+  background:
+    transparent
+    url("https://source.unsplash.com/1610x940/?web")
+    no-repeat;
+    background-size: cover;
+
 }
 
-.topic5 .most-popular p{
+.topic5 .most-popular p {
   margin: 0.5em 0;
 }
+
 .topic5 .most-popular ul {
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
 }
-.topic5 .latest {
-  height: 5em;
-}
+
 .topic5 .latest img {
   width: 20%;
 }
+
 .topic5 .latest p {
   margin: 0.5em 0;
   color: #f42;
   margin: 0.1em 0.5em;
 }
+
 .topic5 .latest div {
   background-color: #ff442214;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
 .topic5 .latest {
   display: flex;
   flex-direction: row-reverse;
   font-size: 0.8rem;
+  height: 5em;
 }
 
 .topic6 .most-popular {
@@ -636,38 +735,46 @@ content: "\2022";
   position: relative;
   color: white;
   height: 200px;
-  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+  background:
+    transparent
+    url("https://source.unsplash.com/1600x910/?web")
+    no-repeat;
+    background-size: cover;
+
 }
 
-.topic6 .most-popular p{
+.topic6 .most-popular p {
   margin: 0.5em 0;
 }
+
 .topic6 .most-popular ul {
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
 }
-.topic6 .latest {
-  height: 5em;
-}
+
 .topic6 .latest img {
   width: 20%;
 }
+
 .topic6 .latest p {
   margin: 0.5em 0;
   color: #f42;
   margin: 0.1em 0.5em;
 }
+
 .topic6 .latest div {
   background-color: #ff442214;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
 .topic6 .latest {
   display: flex;
   flex-direction: row-reverse;
   font-size: 0.8rem;
+  height: 5em;
 }
 
 .topic7 .most-popular {
@@ -678,38 +785,46 @@ content: "\2022";
   position: relative;
   color: white;
   height: 200px;
-  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+  background:
+    transparent
+    url("https://source.unsplash.com/1600x901/?web")
+    no-repeat;
+    background-size: cover;
+
 }
 
-.topic7 .most-popular p{
+.topic7 .most-popular p {
   margin: 0.5em 0;
 }
+
 .topic7 .most-popular ul {
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
 }
-.topic7 .latest {
-  height: 5em;
-}
+
 .topic7 .latest img {
   width: 20%;
 }
+
 .topic7 .latest p {
   margin: 0.5em 0;
   color: #f42;
   margin: 0.1em 0.5em;
 }
+
 .topic7 .latest div {
   background-color: #ff442214;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
 .topic7 .latest {
   display: flex;
   flex-direction: row-reverse;
   font-size: 0.8rem;
+  height: 5em;
 }
 
 .topic8 .most-popular {
@@ -720,43 +835,46 @@ content: "\2022";
   position: relative;
   color: white;
   height: 200px;
-  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg") no-repeat;
+  background:
+    transparent
+    url("https://source.unsplash.com/1600x900/?web")
+    no-repeat;
+    background-size: cover;
 }
 
-.topic8 .most-popular p{
+.topic8 .most-popular p {
   margin: 0.5em 0;
 }
+
 .topic8 .most-popular ul {
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
 }
-.topic8 .latest {
-  height: 5em;
-}
+
 .topic8 .latest img {
   width: 20%;
 }
+
 .topic8 .latest p {
   margin: 0.5em 0;
   color: #f42;
   margin: 0.1em 0.5em;
 }
+
 .topic8 .latest div {
   background-color: #ff442214;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
 .topic8 .latest {
   display: flex;
   flex-direction: row-reverse;
   font-size: 0.8rem;
+  height: 5em;
 }
-
-
-
-
 
 .latest-deals {
   width: 90%;
@@ -783,29 +901,36 @@ content: "\2022";
 
 .deals img {
   width: 100%;
-  height: 10em;
 }
+
 .deals-1 {
   grid-area: deals-1;
 }
+
 .deals-2 {
   grid-area: deals-2;
 }
+
 .deals-3 {
   grid-area: deals-3;
 }
+
 .deals-4 {
   grid-area: deals-4;
 }
+
 .deals-5 {
   grid-area: deals-5;
 }
+
 .deals-6 {
   grid-area: deals-6;
 }
+
 .deals-7 {
   grid-area: deals-7;
 }
+
 .deals-8 {
   grid-area: deals-8;
 }
@@ -829,29 +954,29 @@ content: "\2022";
   color: gray;
 }
 
-footer{
+footer {
   display: flex;
   flex-direction: column;
   height: 240px;
   margin-top: 6rem;
 }
-.share-icons{
+
+.share-icons {
   display: flex;
-  justify-content:  center;
+  justify-content: center;
   align-items: flex-end;
   height: 80px;
   background-color: rgb(32, 32, 32);
 }
 
-
-.footer-links{
+.footer-links {
   display: flex;
-  justify-content:  center;
+  justify-content: center;
   align-items: flex-start;
   height: 80px;
   background-color: rgb(32, 32, 32);
-
 }
+
 .footer-links ul {
   display: flex;
   margin-top: 1rem;
@@ -863,24 +988,26 @@ footer{
   font-size: 0.8rem;
   color: darkgray;
 }
-.footer-links ul li:hover{
+
+.footer-links ul li:hover {
   color: white;
   cursor: pointer;
 }
+
 .icon-circle {
   margin-right: 1.5em;
 }
-.icon-circle:hover{
+
+.icon-circle:hover {
   cursor: pointer;
 }
 
 .copyright {
   display: flex;
-  justify-content:  center;
+  justify-content: center;
   align-items: center;
   height: 80px;
-  background-color:black;
+  background-color: black;
   color: white;
   font-size: 0.8rem;
 }
-
