@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "serif", Arial, Helvetica, sans-serif;
+  font-family: 'serif', Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -46,7 +46,7 @@ a {
 
 .other-articles li {
   border-bottom: 1px solid grey;
-  height: 35px;
+  height: 3rem;
   margin: 0.5em 0;
 }
 
@@ -57,7 +57,7 @@ a {
 }
 
 .funding-nav-2 ul li {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .unscrollable-nav ul li {
@@ -110,8 +110,6 @@ nav .unscrollable-nav {
   /* margin-top: 2em; */
 }
 
-
-
 .hamburger-menu {
   display: flex;
   flex-direction: column;
@@ -140,14 +138,13 @@ nav .unscrollable-nav {
 
 .hero-1 {
   width: 65%;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       to right bottom,
       rgba(255, 67, 10, 0.85) 20%,
       rgba(255, 67, 10, 0.5) 60%,
       transparent
     ),
-    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design19-796x417.png"),
+    url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design19-796x417.png'),
     no-repeat;
   background-size: cover;
   display: flex;
@@ -180,7 +177,7 @@ nav .unscrollable-nav {
 
 .hero-1 .title {
   font-size: 2em;
-  width: 70%;
+  width: 80%;
   margin: 1rem;
 }
 
@@ -198,8 +195,7 @@ nav .unscrollable-nav {
   flex-direction: column;
   justify-content: space-evenly;
   height: 49%;
-  background:
-    transparent url("https://source.unsplash.com/weekly?web")
+  background: transparent url('https://source.unsplash.com/weekly?web')
     no-repeat;
 }
 
@@ -208,8 +204,7 @@ nav .unscrollable-nav {
   flex-direction: column;
   justify-content: space-evenly;
   height: 49%;
-  background:
-    transparent url("https://source.unsplash.com/weekly?tech")
+  background: transparent url('https://source.unsplash.com/weekly?tech')
     no-repeat;
 }
 
@@ -245,8 +240,8 @@ nav .unscrollable-nav {
   grid-template-columns: repeat(auto-fit);
   gap: 2em;
   grid-template-areas:
-    "news-1 news-2 news-3 news-4"
-    "news-5 news-6 news-7 news-8";
+    'news-1 news-2 news-3 news-4'
+    'news-5 news-6 news-7 news-8';
   width: 100%;
 }
 
@@ -254,7 +249,7 @@ nav .unscrollable-nav {
   color: red;
   margin: 2rem auto;
   font-weight: 700;
-  font-size: 1.8em;
+  font-size: 1.2em;
 }
 
 .news img {
@@ -336,31 +331,38 @@ nav .unscrollable-nav {
   display: flex;
   font-size: 0.8rem;
   justify-content: space-between;
+  width: 100%;
 }
-
+.funding-nav-2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
 .funding-nav-2 ul {
   display: flex;
-  font-size: 1rem;
-  margin-top: 2.5em;
+  font-size: 0.9rem;
+  
+  margin-top: 2.1rem;
   color: #f42;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
-
 
 .funding-rounds {
   display: grid;
   grid-template-columns: repeat(auto-fit);
   gap: 2em;
-  grid-template-areas: "fund-1 fund-2 fund-3 fund-4";
+  grid-template-areas: 'fund-1 fund-2 fund-3 fund-4';
   width: 100%;
   position: relative;
 }
-
-.funding-content h2 {
+.funding-nav-1 {
+  width: 50%;
+}
+.funding-nav h2 {
   color: #f42;
   margin: 2rem auto;
   font-weight: 700;
-  font-size: 1.8em;
+  font-size: 1.2rem;
 }
 
 .funding {
@@ -376,8 +378,6 @@ nav .unscrollable-nav {
   justify-content: center;
   align-items: center;
 }
-
-
 
 .funding img {
   width: 20%;
@@ -448,14 +448,15 @@ nav .unscrollable-nav {
   display: grid;
   grid-gap: 1.5em;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 600px);
-  margin: 67px auto 0 auto;
+  grid-template-rows: repeat(3, auto);
+  margin: 2rem auto 0 auto;
   width: 90%;
 }
 
 .other-topics h2 {
   color: #f42;
-  margin: 2rem 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 .latest img {
@@ -463,29 +464,16 @@ nav .unscrollable-nav {
 }
 
 .topic1 .most-popular {
-  margin: 0.2em 0;
+  margin: 0.5em 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
   color: white;
   height: 200px;
-  background:
-    transparent
-    url("https://source.unsplash.com/1600x925/?web")
+  background: transparent url('https://source.unsplash.com/1600x905/?web')
     no-repeat;
-    background-size: cover;
-
-}
-
-.topic1 .most-popular p {
-  margin: 0.5em 0;
-}
-
-.topic1 .most-popular ul {
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: space-between;
+  background-size: cover;
 }
 
 .topic1 .latest {
@@ -504,7 +492,7 @@ nav .unscrollable-nav {
   margin: 0.1em 0.5em;
 }
 
-.topic1 .latest div  {
+.topic1 .latest div {
   background-color: #ff442214;
   display: flex;
   flex-direction: column;
@@ -519,7 +507,7 @@ nav .unscrollable-nav {
 }
 
 .other-articles li::before {
-  content: "\2022";
+  content: '\2022';
   color: red;
   font-weight: bold;
   display: inline-block;
@@ -535,23 +523,12 @@ nav .unscrollable-nav {
   position: relative;
   color: white;
   height: 200px;
-  background:
-    transparent
-    url("https://source.unsplash.com/1650x900/?web")
+  background: transparent url('https://source.unsplash.com/1650x900/?web')
     no-repeat;
-    background-size: cover;
-
+  background-size: cover;
 }
 
-.topic2 .most-popular p {
-  margin: 0.5em 0;
-}
 
-.topic2 .most-popular ul {
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: space-between;
-}
 
 .topic2 .latest img {
   width: 20%;
@@ -584,23 +561,12 @@ nav .unscrollable-nav {
   position: relative;
   color: white;
   height: 200px;
-  background:
-    transparent
-    url("https://source.unsplash.com/1600x700/?web")
+  background: transparent url('https://source.unsplash.com/1600x700/?web')
     no-repeat;
-    background-size: cover;
-
+  background-size: cover;
 }
 
-.topic3 .most-popular p {
-  margin: 0.5em 0;
-}
 
-.topic3 .most-popular ul {
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: space-between;
-}
 
 .topic3 .latest img {
   width: 20%;
@@ -635,23 +601,12 @@ nav .unscrollable-nav {
   position: relative;
   color: white;
   height: 200px;
-  background:
-    transparent
-    url("https://source.unsplash.com/1600x920/?web")
+  background: transparent url('https://source.unsplash.com/1600x920/?web')
     no-repeat;
-    background-size: cover;
-
+  background-size: cover;
 }
 
-.topic4 .most-popular p {
-  margin: 0.5em 0;
-}
 
-.topic4 .most-popular ul {
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: space-between;
-}
 
 .topic4 .latest img {
   width: 20%;
@@ -685,23 +640,12 @@ nav .unscrollable-nav {
   position: relative;
   color: white;
   height: 200px;
-  background:
-    transparent
-    url("https://source.unsplash.com/1610x940/?web")
+  background: transparent url('https://source.unsplash.com/1610x940/?web')
     no-repeat;
-    background-size: cover;
-
+  background-size: cover;
 }
 
-.topic5 .most-popular p {
-  margin: 0.5em 0;
-}
 
-.topic5 .most-popular ul {
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: space-between;
-}
 
 .topic5 .latest img {
   width: 20%;
@@ -735,23 +679,12 @@ nav .unscrollable-nav {
   position: relative;
   color: white;
   height: 200px;
-  background:
-    transparent
-    url("https://source.unsplash.com/1600x910/?web")
+  background: transparent url('https://source.unsplash.com/1600x910/?web')
     no-repeat;
-    background-size: cover;
-
+  background-size: cover;
 }
 
-.topic6 .most-popular p {
-  margin: 0.5em 0;
-}
 
-.topic6 .most-popular ul {
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: space-between;
-}
 
 .topic6 .latest img {
   width: 20%;
@@ -785,23 +718,12 @@ nav .unscrollable-nav {
   position: relative;
   color: white;
   height: 200px;
-  background:
-    transparent
-    url("https://source.unsplash.com/1600x901/?web")
+  background: transparent url('https://source.unsplash.com/1600x901/?web')
     no-repeat;
-    background-size: cover;
-
+  background-size: cover;
 }
 
-.topic7 .most-popular p {
-  margin: 0.5em 0;
-}
 
-.topic7 .most-popular ul {
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: space-between;
-}
 
 .topic7 .latest img {
   width: 20%;
@@ -835,22 +757,11 @@ nav .unscrollable-nav {
   position: relative;
   color: white;
   height: 200px;
-  background:
-    transparent
-    url("https://source.unsplash.com/1600x900/?web")
+  background: transparent url('https://source.unsplash.com/1600x900/?web')
     no-repeat;
-    background-size: cover;
+  background-size: cover;
 }
 
-.topic8 .most-popular p {
-  margin: 0.5em 0;
-}
-
-.topic8 .most-popular ul {
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: space-between;
-}
 
 .topic8 .latest img {
   width: 20%;
@@ -887,8 +798,8 @@ nav .unscrollable-nav {
   grid-template-columns: repeat(auto-fit);
   gap: 2em;
   grid-template-areas:
-    "deals-1 deals-2 deals-3 deals-4"
-    "deals-5 deals-6 deals-7 deals-8";
+    'deals-1 deals-2 deals-3 deals-4'
+    'deals-5 deals-6 deals-7 deals-8';
   width: 100%;
 }
 
@@ -896,7 +807,7 @@ nav .unscrollable-nav {
   color: red;
   margin: 2rem auto;
   font-weight: 700;
-  font-size: 1.8em;
+  font-size: 1.2em;
 }
 
 .deals img {
@@ -1010,4 +921,41 @@ footer {
   background-color: black;
   color: white;
   font-size: 0.8rem;
+}
+.topic .most-popular p {
+  margin: 0.2em 0;
+  padding: 0.5em;
+}
+
+.topic .most-popular ul {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+
+@media screen and (max-width:930px) {
+  .funding-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    width: 100%;
+    margin-bottom: 0.8rem;
+  }
+  .funding-nav-2 {
+    display: flex;
+    width: 40%;
+  }
+  .funding-nav-2 ul {
+    display: flex;
+    font-size: 0.9rem;
+    color: #f42;
+   margin-top: 0;
+  }
+  .funding-nav h2 {
+    color: #f42;
+    margin: 1rem 0 0.5rem 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
 }
