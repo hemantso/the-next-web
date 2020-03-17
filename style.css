@@ -1403,8 +1403,6 @@ footer {
     margin: 0.5rem;
   }
 
-
-
   .news .author-time li {
     margin-right: 1rem;
   }
@@ -2038,8 +2036,6 @@ footer {
     font-size: 1.2rem;
   }
 
-
-
   .deals-1 {
     grid-area: deals-1;
   }
@@ -2072,13 +2068,9 @@ footer {
     grid-area: deals-8;
   }
 
-
-
   .deals {
     display: flex;
   }
-
-
 
   .deals p:hover {
     color: red;
