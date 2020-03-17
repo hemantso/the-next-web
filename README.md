@@ -4,17 +4,18 @@
 
 ![screenshot](./image/Screenshot.png)
 
-Use of Grid and Flex in Designing. Postioning and floating of elements to make this site Responsive.
+Use of Grid and Flex in Designing. Media Query, Positioning and floating of elements to make this site Responsive.
 
 ## Built With
 
 - HTML and CSS,
 - Grid and Flex,
 - UI and UX
+- Media Query
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://rawcdn.githack.com/hemant-soni-vst-au4/the-next-web/15aa1ccd66152fdb611afd39c11d8e4c4638cab1/index.html)
 
 
 ## Authors
@@ -35,7 +36,7 @@ Use of Grid and Flex in Designing. Postioning and floating of elements to make t
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ioilmio/smashing-magazine-project/issues).
+Feel free to check the [issues page]().
 
 ## Show your support
 
