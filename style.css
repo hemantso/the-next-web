@@ -141,8 +141,6 @@ nav .unscrollable-nav .search-container i:last-child {
   justify-content: center;
   font-size: 0.8rem;
   height: 2rem;
-
-  /* margin-top: 3em; */
 }
 
 .hamburger-menu a {
@@ -383,8 +381,6 @@ nav .unscrollable-nav .search-container i:last-child {
   font-size: 0.9rem;
   margin-top: 2.1rem;
   color: #f42;
-
-  /* justify-content: space-around; */
 }
 
 .funding-rounds {
@@ -1339,7 +1335,6 @@ footer {
   }
 
   .hero-1 .author-time-shares span {
-    /* margin: 1rem; */
     font-size: 0.7rem;
   }
 
@@ -1652,8 +1647,6 @@ footer {
     display: grid;
     grid-gap: 1.5em;
     grid-template-columns: 1fr;
-
-    /* grid-template-rows: repeat(auto-fit); */
     margin: 2rem auto 0 auto;
     width: 93%;
   }
