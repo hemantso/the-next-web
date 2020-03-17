@@ -2015,7 +2015,7 @@ footer {
 
   .deals-header {
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(30rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2em;
     grid-template-areas:
       "deals-1"
@@ -2026,7 +2026,6 @@ footer {
       "deals-6"
       "deals-7"
       "deals-8";
-    /* width: 100%; */
   }
 
   .latest-deals h2 {
