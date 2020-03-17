@@ -927,20 +927,95 @@ footer {
   padding: 0.5em;
 }
 
-@media screen and (max-width: 1020px)  {
+@media screen and (max-width: 1020px) {
+  .scrollable-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: rgb(199, 195, 189);
+  }
+
+  .nav-bar-left {
+    float: left;
+  }
+
+  .nav-bar-right {
+    float: right;
+  }
+
+  .unscrollable-nav ul {
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: -9rem; */
+  }
+  .scrollable-nav {
+    width: 85%;
+    height: 2.3rem;
+    display: flex;
+    float: right;
+  }
+
+  .top-nav-bar ul li {
+    list-style-type: none;
+    margin: 0.5em 0.5em;
+    font-size: 0.8rem;
+  }
+
+  .unscrollable-nav {
+    width: 100%;
+  }
+  nav .unscrollable-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(243, 239, 233);
+    color: rgb(119, 118, 116);
+    height: 2.3em;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .small-tnw-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 4.2rem;
+    margin-top: -38px;
+    background: linear-gradient(
+      to right bottom,
+      rgba(186, 10, 255, 0.85) 20%,
+      rgba(252, 60, 1) 80%
+    );
+  }
+
+  .small-tnw-logo img {
+    width: 50%;
+    height: 50%;
+  }
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    border-left: 1px solid rgb(150, 150, 150);
+    align-items: center;
+    height: 30px;
+    padding: 10px;
+  }
+
   .funding-content {
     width: 90%;
     height: auto;
     margin: 1rem auto;
   }
-.funding-rounds {
-  display: grid;
-  grid-template-columns: repeat(3, 32%);
-  gap: 2em;
-  grid-template-areas: "fund-1 fund-2 fund-3 ";
-  width: 100%;
-  position: relative;
-}
+  .funding-rounds {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    gap: 2em;
+    grid-template-areas: "fund-1 fund-2 fund-3 ";
+    width: 100%;
+    position: relative;
+  }
   .funding-nav {
     display: flex;
     flex-direction: column;
@@ -978,7 +1053,7 @@ footer {
     height: auto;
     margin: 0.5rem auto;
   }
-  
+
   .deals-header {
     display: grid;
     grid-template-columns: repeat(3, 32%);
@@ -989,7 +1064,6 @@ footer {
       "deals-4 deals-5 deals-6"
       "deals-7 deals-8 .";
     width: 100%;
-    
   }
   .other-topics {
     display: grid;
@@ -1010,110 +1084,109 @@ footer {
       "news-7 news-8 .";
     width: 100%;
   }
-  
-.heroes {
-  display: flex;
-  max-width: 1500px;
-  width: 100%;
-  height: 18em;
-  justify-content: space-evenly;
-  margin: 0.2em auto;
-  color: white;
-}
 
-.hero-1 {
-  width: 65%;
-  background: linear-gradient(
-      to right bottom,
-      rgba(255, 67, 10, 0.85) 20%,
-      rgba(255, 67, 10, 0.5) 60%,
-      transparent
-    ),
-    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design19-796x417.png"),
-    no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
+  .heroes {
+    display: flex;
+    max-width: 1500px;
+    width: 100%;
+    height: 18em;
+    justify-content: space-evenly;
+    margin: 0.2em auto;
+    color: white;
+  }
 
-.logo-date {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem;
-}
+  .hero-1 {
+    width: 65%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 67, 10, 0.85) 20%,
+        rgba(255, 67, 10, 0.5) 60%,
+        transparent
+      ),
+      url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design19-796x417.png"),
+      no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 
-.hero-1 img {
-  width: 50%;
-}
+  .logo-date {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+  }
 
-.secondary-hero span {
-  margin-left: 1rem;
-}
+  .hero-1 img {
+    width: 50%;
+  }
 
-.hero-1 .author-time-shares span {
-  margin: 0 0 0 1rem;
-  font-size: 0.7rem;
-}
+  .secondary-hero span {
+    margin-left: 1rem;
+  }
 
-.hero-1 .topic {
-  margin: 0 0 0 1rem;
-}
+  .hero-1 .author-time-shares span {
+    margin: 0 0 0 1rem;
+    font-size: 0.7rem;
+  }
 
-.hero-1 .title {
-  font-size: 2em;
-  width: 80%;
-  margin: 0 0 0 1rem;
-}
+  .hero-1 .topic {
+    margin: 0 0 0 1rem;
+  }
 
-.wrapper {
-  display: flex;
-  width: 33%;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  color: white;
-}
+  .hero-1 .title {
+    font-size: 2em;
+    width: 80%;
+    margin: 0 0 0 1rem;
+  }
 
-.secondary-hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 49%;
-  background: transparent url("https://source.unsplash.com/weekly?web")
-    no-repeat;
-}
+  .wrapper {
+    display: flex;
+    width: 33%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+  }
 
-.hero-3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 49%;
-  background: transparent url("https://source.unsplash.com/weekly?tech")
-    no-repeat;
-}
+  .secondary-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 49%;
+    background: transparent url("https://source.unsplash.com/weekly?web")
+      no-repeat;
+  }
 
-.secondary-hero img {
-  height: 100%;
-  width: 100%;
-}
+  .hero-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 49%;
+    background: transparent url("https://source.unsplash.com/weekly?tech")
+      no-repeat;
+  }
 
-.secondary-hero .author-time-shares {
-  display: flex;
-  font-size: 0.8rem;
-}
+  .secondary-hero img {
+    height: 100%;
+    width: 100%;
+  }
 
-.secondary-hero .topic {
-  margin-left: 1rem;
-}
+  .secondary-hero .author-time-shares {
+    display: flex;
+    font-size: 0.8rem;
+  }
 
-.secondary-hero .title {
-  font-size: 1.3em;
-  width: 70%;
-  margin-left: 1rem;
-  font-weight: 700;
-}
- 
+  .secondary-hero .topic {
+    margin-left: 1rem;
+  }
+
+  .secondary-hero .title {
+    font-size: 1.3em;
+    width: 70%;
+    margin-left: 1rem;
+    font-weight: 700;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -1166,9 +1239,9 @@ footer {
 
   .small-tnw-logo {
     display: flex;
-    width: 25%;
-
+    width: 15%;
     height: 100%;
+    margin: 0;
     background: linear-gradient(
       to right bottom,
       rgba(186, 10, 255, 0.85) 20%,
@@ -1397,7 +1470,6 @@ footer {
   .funding-nav-2 ul {
     display: flex;
     font-size: 0.9rem;
-    /* margin: 0.5rem; */
     color: #f42;
     flex-direction: column;
   }
